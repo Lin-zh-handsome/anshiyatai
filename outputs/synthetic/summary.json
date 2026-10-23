@@ -1,0 +1,207 @@
+{
+  "status": "success",
+  "data_kind": "SYNTHETIC/合成测试",
+  "warning": "仅同工况训练内压缩与重建；不是跨载荷工况预测；不证明已解决强非线性 AI-ROM（人工智能降阶模型）。",
+  "n_nodes": 5,
+  "n_time_steps": 6,
+  "total_displacement_dofs": 15,
+  "time_start_s": 0.0,
+  "time_end_s": 0.05,
+  "time_labels": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "time_s": [
+    0.0,
+    0.01,
+    0.02,
+    0.03,
+    0.04,
+    0.05
+  ],
+  "displacement_unit": "数据原单位，待客户确认",
+  "centering": "逐空间分量对所有时间帧求时间均值",
+  "effective_rank": 2,
+  "eigenvalue_relative_tolerance": 1e-12,
+  "centered_energy": 40.195362275583136,
+  "stored_pod_modes": 2,
+  "overall_relative_L2_reconstruction_error": 1.4570493453979164e-08,
+  "full_effective_rank_check": {
+    "rank": 2,
+    "cumulative_energy": 0.9999999999999993,
+    "rmse": 1.695356128576755e-08,
+    "relative_L2": 1.4570493453979164e-08,
+    "max_node_vector_error": 8.739852797247263e-08,
+    "worst_node_id": 9,
+    "worst_time_s": 0.02,
+    "actual_peak_amplitude": 4.3441590925192815,
+    "reconstructed_peak_amplitude": 4.344159110697711,
+    "peak_amplitude_abs_error": 1.8178429428417076e-08,
+    "peak_time_abs_error_s": 0.0,
+    "actual_peak_time_s": 0.05,
+    "reconstructed_peak_time_s": 0.05,
+    "original_float32_bytes": 360,
+    "compressed_float64_bytes": 456,
+    "theoretical_storage_ratio": 0.7894736842105263
+  },
+  "mode_count_for_energy": {
+    "0.99": 2,
+    "0.999": 2,
+    "0.9999": 2
+  },
+  "peak_rss_mib": 113.59765625,
+  "stage_seconds": {
+    "parse_or_reuse_s": 0.8145291149849072,
+    "pod_s": 0.03147649299353361,
+    "evaluation_s": 0.007062979973852634,
+    "plot_s": 1.846618258045055,
+    "total_s": 3.1133348789298907
+  },
+  "process_cpu_seconds": 2.226580212,
+  "input_validation": {
+    "source": {
+      "path": "./outputs/synthetic_fixture/raw/位移_合成测试.txt",
+      "size_bytes": 2165,
+      "mtime_ns": 1792643064617628874
+    },
+    "node_count": 5,
+    "time_labels": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "npy_shape": [
+      6,
+      5,
+      3
+    ],
+    "dtype": "float32",
+    "rows": 30,
+    "max_float32_conversion_abs_error": 1.0041473386124267e-07,
+    "snapshots": {
+      "path": "./outputs/synthetic/snapshots.npy",
+      "size_bytes": 488,
+      "mtime_ns": 1792643065112633722
+    },
+    "status": "validated",
+    "provenance": {
+      "coordinates": {
+        "path": "./outputs/synthetic_fixture/raw/坐标_合成测试.txt",
+        "size_bytes": 67,
+        "mtime_ns": 1792643064617628874
+      },
+      "time_map": {
+        "path": "./outputs/synthetic_fixture/raw/time_mapping.csv",
+        "size_bytes": 96,
+        "mtime_ns": 1792643064616628864
+      },
+      "displacement": {
+        "path": "./outputs/synthetic_fixture/raw/位移_合成测试.txt",
+        "size_bytes": 2165,
+        "mtime_ns": 1792643064617628874
+      },
+      "labels": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "times_s": [
+        0.0,
+        0.01,
+        0.02,
+        0.03,
+        0.04,
+        0.05
+      ]
+    }
+  },
+  "selected_rank": 2,
+  "rank_metrics": [
+    {
+      "rank": 1,
+      "cumulative_energy": 0.9409238753793238,
+      "rmse": 0.16243242119470183,
+      "relative_L2": 0.13960019902828572,
+      "max_node_vector_error": 0.5944830297731899,
+      "worst_node_id": 9,
+      "worst_time_s": 0.05,
+      "actual_peak_amplitude": 4.3441590925192815,
+      "reconstructed_peak_amplitude": 4.659921877264656,
+      "peak_amplitude_abs_error": 0.3157627847453748,
+      "peak_time_abs_error_s": 0.0,
+      "actual_peak_time_s": 0.05,
+      "reconstructed_peak_time_s": 0.05,
+      "original_float32_bytes": 360,
+      "compressed_float64_bytes": 288,
+      "theoretical_storage_ratio": 1.25
+    },
+    {
+      "rank": 2,
+      "cumulative_energy": 0.9999999999999993,
+      "rmse": 1.695356128576755e-08,
+      "relative_L2": 1.4570493453979164e-08,
+      "max_node_vector_error": 8.739852797247263e-08,
+      "worst_node_id": 9,
+      "worst_time_s": 0.02,
+      "actual_peak_amplitude": 4.3441590925192815,
+      "reconstructed_peak_amplitude": 4.344159110697711,
+      "peak_amplitude_abs_error": 1.8178429428417076e-08,
+      "peak_time_abs_error_s": 0.0,
+      "actual_peak_time_s": 0.05,
+      "reconstructed_peak_time_s": 0.05,
+      "original_float32_bytes": 360,
+      "compressed_float64_bytes": 456,
+      "theoretical_storage_ratio": 0.7894736842105263
+    }
+  ],
+  "key_nodes": [
+    {
+      "node_id": 2,
+      "rank": 2,
+      "actual_peak": 3.733070759399696,
+      "reconstructed_peak": 3.733070746457852,
+      "peak_amplitude_abs_error": 1.2941844040881278e-08,
+      "actual_peak_time_s": 0.05,
+      "reconstructed_peak_time_s": 0.05,
+      "peak_time_abs_error_s": 0.0,
+      "rmse": 1.3132261852600973e-08
+    },
+    {
+      "node_id": 17,
+      "rank": 2,
+      "actual_peak": 2.4476229390908375,
+      "reconstructed_peak": 2.447622947286913,
+      "peak_amplitude_abs_error": 8.196075373945177e-09,
+      "actual_peak_time_s": 0.05,
+      "reconstructed_peak_time_s": 0.05,
+      "peak_time_abs_error_s": 0.0,
+      "rmse": 1.0780703100422268e-08
+    },
+    {
+      "node_id": 9,
+      "rank": 2,
+      "actual_peak": 4.3441590925192815,
+      "reconstructed_peak": 4.344159110697711,
+      "peak_amplitude_abs_error": 1.8178429428417076e-08,
+      "actual_peak_time_s": 0.05,
+      "reconstructed_peak_time_s": 0.05,
+      "peak_time_abs_error_s": 0.0,
+      "rmse": 3.15607339165503e-08
+    }
+  ],
+  "missing_requested_node_ids": [],
+  "global_peak_node_id": 9,
+  "global_peak_amplitude": 4.3441590925192815,
+  "global_peak_time_s": 0.05,
+  "reproduction_command": "./.venv/bin/python src/rom_pod_v1.py --coordinates 'outputs/synthetic_fixture/raw/坐标_合成测试.txt' --displacements 'outputs/synthetic_fixture/raw/位移_合成测试.txt' --time-map outputs/synthetic_fixture/raw/time_mapping.csv --output outputs/synthetic --synthetic --rank 2 --node-ids 2,17 --feature-chunk 4"
+}

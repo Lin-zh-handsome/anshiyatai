@@ -1,0 +1,21 @@
+# 原始工程输入与参考资料
+data/
+reference/
+# 磁盘快照、模态、系数与大文件归档
+*.npy
+*.npz
+*.h5
+*.hdf5
+*.zip
+*.gz
+*.ttc
+*.ttf
+# 本地运行环境与临时输出
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+*.log
+.env
+outputs/synthetic_fixture/
+outputs/*/snapshots_manifest.json
