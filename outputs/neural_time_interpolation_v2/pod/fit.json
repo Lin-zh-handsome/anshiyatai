@@ -1,0 +1,39 @@
+{
+  "train_snapshots": 180,
+  "dim": 803403,
+  "max_basis_orthonormality_error": 3.096797548419747e-08,
+  "ranks": [
+    {
+      "rank": 8,
+      "cumulative_energy": 0.9999986104570189,
+      "train_projection_rmse": 0.0021137492668099143,
+      "train_projection_relative_l2": 0.0011237989419357003,
+      "validation_projection_rmse": 0.0024885079339607872,
+      "validation_projection_relative_l2": 0.0021261794447487593
+    },
+    {
+      "rank": 16,
+      "cumulative_energy": 0.9999999946966674,
+      "train_projection_rmse": 0.00013058458527915676,
+      "train_projection_relative_l2": 6.942678636208636e-05,
+      "validation_projection_rmse": 0.00020613386334125054,
+      "validation_projection_relative_l2": 0.00017612062920178856
+    },
+    {
+      "rank": 32,
+      "cumulative_energy": 0.9999999999936607,
+      "train_projection_rmse": 4.514715983578023e-06,
+      "train_projection_relative_l2": 2.4003003218741934e-06,
+      "validation_projection_rmse": 2.962774925708188e-05,
+      "validation_projection_relative_l2": 2.5313928320218266e-05
+    },
+    {
+      "rank": 64,
+      "cumulative_energy": 0.9999999999999998,
+      "train_projection_rmse": 2.487755025515866e-08,
+      "train_projection_relative_l2": 1.3226433756210345e-08,
+      "validation_projection_rmse": 6.495827616433138e-07,
+      "validation_projection_relative_l2": 5.550030589096406e-07
+    }
+  ]
+}
