@@ -1,0 +1,164 @@
+{
+  "YXZForce_2.5x": {
+    "case": "YXZForce_2.5x",
+    "horizon_frames": 93,
+    "first_target_ms": 8.0,
+    "last_target_ms": 100.0,
+    "diagnostics": {
+      "history_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "encode_s": 0.03942050994373858,
+      "tcn_recursive_forecast_s": 2.077606573002413,
+      "epoch": 10,
+      "single_step_with_measured_history_latent_relative_l2": 0.03986147540259554,
+      "zero_load_counterfactual_relative_latent_change": 0.2038353115744203,
+      "encode_rollout_reconstruct_s": 2.251671554055065,
+      "rmse_at_horizon_ms": {
+        "1": 0.03569108561671475,
+        "10": 0.6829078815436321,
+        "20": 1.2697824193134521,
+        "50": 0.7713164755933728,
+        "93": 1.2382375131832783
+      }
+    },
+    "methods": {
+      "tcn": {
+        "rmse": 0.8936779856822515,
+        "relative_l2": 0.2878394916722772,
+        "mae": 0.40117472544501653,
+        "max_node_vector_error": 7.821850408034871,
+        "max_error_time_ms": 29.0,
+        "peak_displacement": 28.825147847153524,
+        "peak_time_ms": 15.0,
+        "peak_node_id": 56976,
+        "field_reconstruction_s": 0.13464447110891342
+      },
+      "linear": {
+        "rmse": 0.9614942595907657,
+        "relative_l2": 0.3096820368861805,
+        "mae": 0.41494423347244797,
+        "max_node_vector_error": 8.352211227181712,
+        "max_error_time_ms": 100.0,
+        "peak_displacement": 28.687321903931927,
+        "peak_time_ms": 15.0,
+        "peak_node_id": 56976,
+        "field_reconstruction_s": 0.11251467280089855
+      },
+      "persistence": {
+        "rmse": 3.5544310960518546,
+        "relative_l2": 1.1448258279414163,
+        "mae": 1.541491228928354,
+        "max_node_vector_error": 35.46740249111181,
+        "max_error_time_ms": 85.0,
+        "peak_displacement": 19.137254768861006,
+        "peak_time_ms": 8.0,
+        "peak_node_id": 56876,
+        "field_reconstruction_s": 0.459561932599172
+      },
+      "pod_projection": {
+        "rmse": 0.011100626354512021,
+        "relative_l2": 0.0035753355216502788,
+        "mae": 0.006224756794897629,
+        "max_node_vector_error": 0.16448012235023346,
+        "max_error_time_ms": 54.0,
+        "peak_displacement": 31.80593048042074,
+        "peak_time_ms": 16.0,
+        "peak_node_id": 56976,
+        "field_reconstruction_s": 0.11070690304040909
+      }
+    },
+    "key_node_id": 56877,
+    "truth_peak_displacement": 31.693292029645093,
+    "truth_peak_time_ms": 16.0,
+    "truth_peak_node_id": 56976
+  },
+  "XYZForce_2x": {
+    "case": "XYZForce_2x",
+    "horizon_frames": 93,
+    "first_target_ms": 8.0,
+    "last_target_ms": 100.0,
+    "diagnostics": {
+      "history_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "encode_s": 0.26448687398806214,
+      "tcn_recursive_forecast_s": 0.02929853997193277,
+      "epoch": 10,
+      "single_step_with_measured_history_latent_relative_l2": 0.034015889582249284,
+      "zero_load_counterfactual_relative_latent_change": 0.7081012963472821,
+      "encode_rollout_reconstruct_s": 0.42407567775808275,
+      "rmse_at_horizon_ms": {
+        "1": 0.10615040218673384,
+        "10": 1.2390001886424142,
+        "20": 0.5768400246472349,
+        "50": 0.9366107629988845,
+        "93": 1.271571190601276
+      }
+    },
+    "methods": {
+      "tcn": {
+        "rmse": 1.0307155328616366,
+        "relative_l2": 0.5008497994147534,
+        "mae": 0.4459247539947065,
+        "max_node_vector_error": 10.000275458196832,
+        "max_error_time_ms": 93.0,
+        "peak_displacement": 13.028682596321223,
+        "peak_time_ms": 87.0,
+        "peak_node_id": 56877,
+        "field_reconstruction_s": 0.13029026379808784
+      },
+      "linear": {
+        "rmse": 0.9955957034338784,
+        "relative_l2": 0.4837842183076777,
+        "mae": 0.4238244891265583,
+        "max_node_vector_error": 9.746219598286517,
+        "max_error_time_ms": 92.0,
+        "peak_displacement": 13.42813723790104,
+        "peak_time_ms": 86.0,
+        "peak_node_id": 56877,
+        "field_reconstruction_s": 0.12215780396945775
+      },
+      "persistence": {
+        "rmse": 2.6388211029996356,
+        "relative_l2": 1.2822674908753944,
+        "mae": 1.1023564739542113,
+        "max_node_vector_error": 25.905267976266725,
+        "max_error_time_ms": 88.0,
+        "peak_displacement": 5.55081552364005,
+        "peak_time_ms": 8.0,
+        "peak_node_id": 56976,
+        "field_reconstruction_s": 0.46582078910432756
+      },
+      "pod_projection": {
+        "rmse": 0.0005132546110702179,
+        "relative_l2": 0.00024940292525670526,
+        "mae": 0.0003036122616375747,
+        "max_node_vector_error": 0.009827312281640663,
+        "max_error_time_ms": 78.0,
+        "peak_displacement": 21.26396786798485,
+        "peak_time_ms": 88.0,
+        "peak_node_id": 56877,
+        "field_reconstruction_s": 0.12295576860196888
+      }
+    },
+    "key_node_id": 56877,
+    "truth_peak_displacement": 21.266378513526423,
+    "truth_peak_time_ms": 88.0,
+    "truth_peak_node_id": 56877
+  }
+}

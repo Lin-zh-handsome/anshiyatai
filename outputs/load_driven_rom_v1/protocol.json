@@ -1,0 +1,120 @@
+{
+  "train": [
+    "XForceOnly_1x",
+    "YForceOnly_1x",
+    "ZForceOnly_1x"
+  ],
+  "validation": "YXZForce_2.5x",
+  "test": "XYZForce_2x",
+  "lag": 8,
+  "first_forecast_index": 8,
+  "rank": 8,
+  "available_basis_rank": 16,
+  "pod_train_relative_l2_by_rank": {
+    "4": 0.003326593265312033,
+    "8": 0.00019532327076427012,
+    "12": 6.671669492072405e-05,
+    "16": 3.502676556301772e-05
+  },
+  "pod_selection_train_relative_l2_target": 0.002,
+  "model_selection": "Minimum uninterrupted validation latent relative L2 from first eight true fields",
+  "rank_selection": "First candidate meeting train displacement-increment projection relative L2 target",
+  "loss": "0.4 * first-step plus 0.6 * rollout MSE, mode weighted by train RMS",
+  "seed": 20261113,
+  "device": "cuda",
+  "epochs": 90,
+  "pod_and_projection_s": 43.6246694480069,
+  "data": {
+    "displacement_cache": "data/prepared_neural_time_v1",
+    "nodes": 267801,
+    "frames": 101,
+    "displacement_step_s": 0.001,
+    "force_table_step_s": 0.002,
+    "force_axes": [
+      "X",
+      "Y",
+      "Z"
+    ],
+    "force_alignment": "Piecewise linear on supplied force tables",
+    "force_values": "Values as supplied; no multiplication based on the case label",
+    "cases": {
+      "XForceOnly_1x": {
+        "force_sources": [
+          "data/prepared_v1/X/loads.npz"
+        ],
+        "supplied_axes": [
+          "X"
+        ],
+        "abs_max_raw": [
+          20300.0,
+          0.0,
+          0.0
+        ]
+      },
+      "YForceOnly_1x": {
+        "force_sources": [
+          "data/prepared_v1/Y/loads.npz"
+        ],
+        "supplied_axes": [
+          "Y"
+        ],
+        "abs_max_raw": [
+          0.0,
+          20300.0,
+          0.0
+        ]
+      },
+      "ZForceOnly_1x": {
+        "force_sources": [
+          "data/prepared_v1/Z/loads.npz"
+        ],
+        "supplied_axes": [
+          "Z"
+        ],
+        "abs_max_raw": [
+          0.0,
+          0.0,
+          1120.0
+        ]
+      },
+      "YXZForce_2.5x": {
+        "force_sources": [
+          "data/raw/updated_cases_2026-11-01/瞬态结构案例更新工况.part01.rar::瞬态结构案例更新工况/工业机器人瞬态结构分析-YXZForce-2.5倍幅值/X方向载荷曲线.txt",
+          "data/raw/updated_cases_2026-11-01/瞬态结构案例更新工况.part01.rar::瞬态结构案例更新工况/工业机器人瞬态结构分析-YXZForce-2.5倍幅值/Y方向载荷曲线.txt",
+          "data/raw/updated_cases_2026-11-01/瞬态结构案例更新工况.part01.rar::瞬态结构案例更新工况/工业机器人瞬态结构分析-YXZForce-2.5倍幅值/Z方向载荷曲线.txt"
+        ],
+        "supplied_axes": [
+          "X",
+          "Y",
+          "Z"
+        ],
+        "abs_max_raw": [
+          20300.0,
+          20300.0,
+          1120.0
+        ]
+      },
+      "XYZForce_2x": {
+        "force_sources": [
+          "data/raw/updated_cases_2026-11-01/瞬态结构案例更新工况.part01.rar::瞬态结构案例更新工况/工业机器人瞬态结构分析-XYZForce-2倍幅值/X方向载荷曲线.txt",
+          "data/raw/updated_cases_2026-11-01/瞬态结构案例更新工况.part01.rar::瞬态结构案例更新工况/工业机器人瞬态结构分析-XYZForce-2倍幅值/Y方向载荷曲线.txt",
+          "data/raw/updated_cases_2026-11-01/瞬态结构案例更新工况.part01.rar::瞬态结构案例更新工况/工业机器人瞬态结构分析-XYZForce-2倍幅值/Z方向载荷曲线.txt"
+        ],
+        "supplied_axes": [
+          "X",
+          "Y",
+          "Z"
+        ],
+        "abs_max_raw": [
+          20300.0,
+          20300.0,
+          1120.0
+        ]
+      }
+    },
+    "excluded_cases": {
+      "XYZForce_1x": "Same supplied XYZ force tables as XYZForce_2x, with different displacement."
+    },
+    "case_label_note": "The 2x and 2.5x names are source labels, and solver-side force scaling is unresolved."
+  }
+}

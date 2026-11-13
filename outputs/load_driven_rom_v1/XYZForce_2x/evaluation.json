@@ -1,0 +1,81 @@
+{
+  "case": "XYZForce_2x",
+  "horizon_frames": 93,
+  "first_target_ms": 8.0,
+  "last_target_ms": 100.0,
+  "diagnostics": {
+    "history_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "encode_s": 0.26448687398806214,
+    "tcn_recursive_forecast_s": 0.02929853997193277,
+    "epoch": 10,
+    "single_step_with_measured_history_latent_relative_l2": 0.034015889582249284,
+    "zero_load_counterfactual_relative_latent_change": 0.7081012963472821,
+    "encode_rollout_reconstruct_s": 0.42407567775808275,
+    "rmse_at_horizon_ms": {
+      "1": 0.10615040218673384,
+      "10": 1.2390001886424142,
+      "20": 0.5768400246472349,
+      "50": 0.9366107629988845,
+      "93": 1.271571190601276
+    }
+  },
+  "methods": {
+    "tcn": {
+      "rmse": 1.0307155328616366,
+      "relative_l2": 0.5008497994147534,
+      "mae": 0.4459247539947065,
+      "max_node_vector_error": 10.000275458196832,
+      "max_error_time_ms": 93.0,
+      "peak_displacement": 13.028682596321223,
+      "peak_time_ms": 87.0,
+      "peak_node_id": 56877,
+      "field_reconstruction_s": 0.13029026379808784
+    },
+    "linear": {
+      "rmse": 0.9955957034338784,
+      "relative_l2": 0.4837842183076777,
+      "mae": 0.4238244891265583,
+      "max_node_vector_error": 9.746219598286517,
+      "max_error_time_ms": 92.0,
+      "peak_displacement": 13.42813723790104,
+      "peak_time_ms": 86.0,
+      "peak_node_id": 56877,
+      "field_reconstruction_s": 0.12215780396945775
+    },
+    "persistence": {
+      "rmse": 2.6388211029996356,
+      "relative_l2": 1.2822674908753944,
+      "mae": 1.1023564739542113,
+      "max_node_vector_error": 25.905267976266725,
+      "max_error_time_ms": 88.0,
+      "peak_displacement": 5.55081552364005,
+      "peak_time_ms": 8.0,
+      "peak_node_id": 56976,
+      "field_reconstruction_s": 0.46582078910432756
+    },
+    "pod_projection": {
+      "rmse": 0.0005132546110702179,
+      "relative_l2": 0.00024940292525670526,
+      "mae": 0.0003036122616375747,
+      "max_node_vector_error": 0.009827312281640663,
+      "max_error_time_ms": 78.0,
+      "peak_displacement": 21.26396786798485,
+      "peak_time_ms": 88.0,
+      "peak_node_id": 56877,
+      "field_reconstruction_s": 0.12295576860196888
+    }
+  },
+  "key_node_id": 56877,
+  "truth_peak_displacement": 21.266378513526423,
+  "truth_peak_time_ms": 88.0,
+  "truth_peak_node_id": 56877
+}
