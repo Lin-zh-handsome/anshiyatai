@@ -1,0 +1,27 @@
+{
+  "case": "XForceOnly_1x",
+  "frames": 101,
+  "nodes": 267801,
+  "components": [
+    "DX",
+    "DY",
+    "DZ"
+  ],
+  "time_range_ms": [
+    0,
+    100
+  ],
+  "displacement_sampling_ms": 1,
+  "original_force_knots": 51,
+  "original_force_sampling_ms": 2,
+  "force_min": 5.86e-10,
+  "force_max": 20300.0,
+  "source_load": "data/extracted_v1/瞬态结构案例更新工况/工业机器人瞬态结构分析-XForceOnly-1倍幅值/X方向载荷曲线.txt",
+  "aligned_force_method": "Piecewise linear; all 51 source knots preserved",
+  "node_mapping": "data/prepared_v1/node_ids.npy",
+  "displacement_source": "data/prepared_v1/X/snapshots.npy",
+  "force_cache_exact_original_match": true,
+  "nonfinite_displacement_frames": 0,
+  "units": "Source displacement and force units, no conversion",
+  "coordinate_system": "Source XYZ ordering, no transformation"
+}

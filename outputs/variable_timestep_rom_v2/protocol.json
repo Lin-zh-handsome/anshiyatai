@@ -1,0 +1,82 @@
+{
+  "case": "XForceOnly_1x",
+  "nodes": 267801,
+  "frames": 101,
+  "history_length": 4,
+  "width": 32,
+  "step_scale_ms": 8,
+  "seed": 20261113,
+  "rank": 8,
+  "pod_fit_ms": [
+    0,
+    100
+  ],
+  "pod_rank_candidates": [
+    {
+      "rank": 4,
+      "projection_relative_l2": 0.00224070296657951,
+      "projection_rmse": 0.0018269393631761973
+    },
+    {
+      "rank": 8,
+      "projection_relative_l2": 0.00021232893629355795,
+      "projection_rmse": 0.00017312071142039403
+    },
+    {
+      "rank": 12,
+      "projection_relative_l2": 7.24693963826388e-05,
+      "projection_rmse": 5.9087346628174126e-05
+    },
+    {
+      "rank": 16,
+      "projection_relative_l2": 3.106022954683956e-05,
+      "projection_rmse": 2.532471141189789e-05
+    }
+  ],
+  "pod_tolerance_relative_l2": 0.002,
+  "coefficient_scale": [
+    727.6750040561974,
+    56.31830102768842,
+    35.53295224053462,
+    14.553500081123948,
+    14.553500081123948,
+    14.553500081123948,
+    14.553500081123948,
+    14.553500081123948
+  ],
+  "coefficient_rms_floor_fraction": 0.02,
+  "force_scale": 20300.0,
+  "train_steps_ms": [
+    1,
+    2,
+    4,
+    6,
+    8
+  ],
+  "final_test_steps_ms": [
+    3,
+    5,
+    7
+  ],
+  "windows_by_step": {
+    "1": 97,
+    "2": 96,
+    "3": 95,
+    "4": 94,
+    "5": 93,
+    "6": 92,
+    "7": 91,
+    "8": 90
+  },
+  "selection": "Lowest macro-average normalized MSE on training spans only",
+  "device": "cuda",
+  "fixed_epochs": 1000,
+  "variable_epochs": 1800,
+  "optimizer": "AdamW",
+  "learning_rate": 0.001,
+  "min_lr": 2e-05,
+  "gradient_clip_norm": 1.0,
+  "scheduler": "cosine annealing",
+  "training_weight_decay": 0.0001,
+  "hardware": "NVIDIA GeForce RTX 3090"
+}
